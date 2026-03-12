@@ -12,6 +12,8 @@ print ("a frase em minúscula é: ", frase.lower())
 
 for i in range(len(frase)):
   if (frase[i] == "a"):
-    frase[i] = "@"
+    frase = frase.replace("a", "@")
   if (frase[i] == "e"):
-    frase[i] = "&"
+    frase = frase.replace("e", "&")
+
+    print("frase com @ e &: ", frase)
